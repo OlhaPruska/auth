@@ -1,0 +1,26 @@
+.authorization-field,
+.go-to-admin {
+    display: flex;
+    flex-direction: column;
+    background-color: #284eef;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.go-to-admin-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+.go-to-admin-link:hover {
+    color: #dae1ff;
+}
+.sign-in-button {
+    background-color: #fff;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#284eef;
+}
+.sign-in-button:hover {
+    background-color: #DAE1FF;
+    color: #011e9b;
+}
