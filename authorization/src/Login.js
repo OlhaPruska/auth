@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useContext } from "react";
 import AuthContext from "./context/AuthProvider";
 import axios from "./api/axios";
-import './Login.css';
+import "./Login.css";
 const LOGIN_URL = "/auth";
 const Login = () => {
   const { setAuth } = useContext(AuthContext);
@@ -76,10 +76,10 @@ const Login = () => {
             {errMsg}
           </p>
           <h1>Sign In</h1>
-
+          
           <form onSubmit={handleSubmit}>
             <label htmlFor="username">Username:</label>
-            <input
+            <input class="input-field"
               type="text"
               id="username"
               ref={userRef}
@@ -88,15 +88,16 @@ const Login = () => {
               value={user}
               required
             />
-
+           
             <label htmlFor="password">Password:</label>
-            <input
+            <input class="input-field"
               type="password"
               id="password"
               onChange={(e) => setPwd(e.target.value)}
               value={pwd}
               required
             />
+            <br/>
             <button class="sign-in-button">Sign in</button>
           </form>
         </section>
